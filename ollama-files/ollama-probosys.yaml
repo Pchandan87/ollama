@@ -29,11 +29,11 @@ spec:
         autoscaling.knative.dev/target: 1
         autoscaling.knative.dev/targetBurstCapacity: 0
       labels: |
-        ai.sap.com/resourcePlan: "{{inputs.parameters.resourcePlan}}"
+        ai.sap.com/resourcePlan: "probosysplan"
     spec: |
       predictor:
         imagePullSecrets:
-        - name: ollama
+        - name: Default
         minReplicas: 1
         maxReplicas: 1
         containers:

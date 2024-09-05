@@ -33,7 +33,7 @@ spec:
     spec: |
       predictor:
         imagePullSecrets:
-        - name: my_secret_password
+        - name: ollama-probosys
         minReplicas: 1
         maxReplicas: 1
         containers:
